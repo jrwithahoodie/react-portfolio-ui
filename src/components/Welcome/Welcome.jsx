@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import "./Welcome.css"
+import "./WelcomeStyles.css"
 import WelcomeImage from "../../assets/welcome-background.jpg"
 
 const Welcome = () => {
