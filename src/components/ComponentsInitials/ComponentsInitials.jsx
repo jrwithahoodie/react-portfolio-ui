@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 import "./ComponentsInitialsStyles.css"
 
-export function ComponentsInitials({ heading, text }) {
+function ComponentsInitials({ heading, text }) {
     return (
         <div className="ciContainer">
             <div className="heading">
@@ -12,3 +12,5 @@ export function ComponentsInitials({ heading, text }) {
         </div>
     )
 }
+
+export default ComponentsInitials;
