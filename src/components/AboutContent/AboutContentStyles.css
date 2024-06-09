@@ -1,28 +1,39 @@
 * {
-    color: white;
+  color: white;
 }
 
 .containerContent {
-    width: 100%;
-    padding: 6rem 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
+  width: 100%;
+  padding: 6rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
-.aboutInfo, .skills {
-    max-width: 40%;
+.buttonContainer {
+    margin-top: 1rem;
 }
 
-@media screen and (max-width: 640px) {
-    .containerContent {
-        flex-direction: column;
-        padding: 1rem;
-    }
+.aboutInfo .info {
+  font-size: 1rem;
+  line-height: 2rem;
+}
 
-    .aboutInfo, .skills {
-        max-width: 100%;
-        margin: 1vh;
-    }
+.aboutInfo,
+.skills {
+  max-width: 40%;
+}
+
+@media screen and (max-width: 1280px) {
+  .containerContent {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .aboutInfo,
+  .skills {
+    max-width: 100%;
+    margin: 1vh;
+  }
 }
