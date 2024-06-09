@@ -1,0 +1,16 @@
+* {
+    color: white;
+}
+
+.containerContent {
+    width: 100%;
+    padding: 6rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.aboutInfo, .skills {
+    max-width: 40%;
+}
