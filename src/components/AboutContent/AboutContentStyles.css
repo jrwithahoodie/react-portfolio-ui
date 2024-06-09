@@ -14,3 +14,15 @@
 .aboutInfo, .skills {
     max-width: 40%;
 }
+
+@media screen and (max-width: 640px) {
+    .containerContent {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .aboutInfo, .skills {
+        max-width: 100%;
+        margin: 1vh;
+    }
+}
