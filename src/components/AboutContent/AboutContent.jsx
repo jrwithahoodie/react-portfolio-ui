@@ -57,7 +57,22 @@ const AboutContent = () => {
             <div className="aboutInfo">
                 <h1>Get to know me!</h1>
                 <div className="info">
-                    <p>I'm a Frontend Focused Web Developer building and managing the Front-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the Projects section.I also like sharing content related to the stuff that I have learned over the years in Web Development so it can help other people of the Dev Community. Feel free to Connect or Follow me on my Linkedin and Instagram where I post useful content related to Web Development and Programming. I'm open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to contact me.</p>
+                    <p>Hello, I'm José Ramón, a junior developer with 2 years of experience in creating web and cross-platform applications. Throughout my career, I have gained solid skills in a variety of front-end and back-end technologies, frameworks, and tools. My focus is on developing efficient and robust solutions that solve real problems and enhance the user experience. During my journey, I have worked on various projects that have allowed me to apply and expand my knowledge. Some of my achievements and certifications include:</p>
+                    <br />
+                    <ul>
+                        <li>
+                            <p>
+                                <strong>Higher Degree in Cross-Platform Application Development</strong>: This training provided me with a solid foundation in application development and allowed me to acquire practical skills in designing and implementing cross-platform solutions.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                            <strong>"TheUncoding" Certification in OKR and Product Owner</strong>: This certification has given me a better understanding of managing objectives and key results (OKR) and performing the role of Product Owner, enhancing my ability to manage software development projects effectively.
+                            </p>
+                        </li>
+                    </ul>
+                    <br />
+                    <p>My work approach is based on code quality, efficiency, and collaboration. I enjoy solving complex problems and transforming ideas into functional and aesthetically pleasing products. I am a firm believer in continuous learning and always strive to stay updated with the latest industry trends and best practices.Currently, I am seeking new opportunities and challenges that allow me to grow as a developer and contribute to innovative projects. If you have an idea in mind or just want to connect, feel free to reach out to me.</p>
                 </div>
                 <div className="buttonContainer">
                     <div>

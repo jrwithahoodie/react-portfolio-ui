@@ -11,8 +11,7 @@ const Footer = () => {
                 <div className="location">
                     <FaHome size={20} style={{color: "#fff", marginRight: "2rem"}}/>
                     <div>
-                        <p>123 asdf</p>
-                        <p>Spain</p>
+                        <p>Málaga, Spain</p>
                     </div>
                 </div>
                 <div className="phone">
@@ -31,7 +30,7 @@ const Footer = () => {
             <div className="rightColumn">
                 <h4>About me</h4>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis velit tenetur fugit beatae sapiente? Delectus, eveniet dignissimos nihil non consectetur deserunt impedit sint earum explicabo cupiditate officiis. At, eum voluptate?
+                Hello, I'm José Ramón, a junior developer with 2 years of experience in web and cross-platform applications. Skilled in various front-end and back-end technologies, I focus on creating efficient and robust solutions. With a Higher Degree in Cross-Platform Application Development and a certification in OKR and Product Owner from "TheUncoding," I am always eager to learn and take on new challenges. Let's connect!
                 </p>
                 <div className="social">
                     <FaLinkedin size={20} style={{color: "#fff", marginRight: "2rem"}}/>
