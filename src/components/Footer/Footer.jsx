@@ -33,9 +33,15 @@ const Footer = () => {
                 Hello, I'm José Ramón, a junior developer with 2 years of experience in web and cross-platform applications. Skilled in various front-end and back-end technologies, I focus on creating efficient and robust solutions. With a Higher Degree in Cross-Platform Application Development and a certification in OKR and Product Owner from "TheUncoding," I am always eager to learn and take on new challenges. Let's connect!
                 </p>
                 <div className="social">
-                    <FaLinkedin size={20} style={{color: "#fff", marginRight: "2rem"}}/>
-                    <FaGithub size={20} style={{color: "#fff", marginRight: "2rem"}}/>
-                    <FaInstagram size={20} style={{color: "#fff", marginRight: "2rem"}}/>
+                    <a href="github.com/jrwithahoodie" className="social-button github">
+                        <FaGithub className="cf-icon-svg"></FaGithub>
+                    </a>
+                    <a href="github.com/jrwithahoodie" className="social-button linkedin">
+                        <FaLinkedin className="cf-icon-svg"></FaLinkedin>
+                    </a>
+                    <a href="github.com/jrwithahoodie" className="social-button instagram">
+                        <FaInstagram className="cf-icon-svg"></FaInstagram>
+                    </a>
                 </div>
             </div>
         </div>
