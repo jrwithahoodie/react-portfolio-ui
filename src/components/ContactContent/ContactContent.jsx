@@ -13,6 +13,9 @@ export const ContactContent = () => {
         const serviceId = import.meta.env.VITE_EMAIL_SERVICE;
         const templateId = import.meta.env.VITE_EMAIL_TEMPLATE;
         const apiKey = import.meta.env.VITE_EMAIL_SERVICE_KEY;
+        console.log("service: " + serviceId);
+        console.log("Template: " + templateId);
+        console.log("Key: " + apiKey);
 
         emailjs.sendForm(serviceId, templateId, refForm.current, apiKey)
             .then(result => console.log(result.text))
