@@ -30,7 +30,7 @@ jobs:
             echo "VITE_EMAIL_SERVICE=$VITE_EMAIL_SERVICE"
             echo "VITE_EMAIL_TEMPLATE=$VITE_EMAIL_TEMPLATE"
             echo "VITE_EMAIL_SERVICE_KEY=$VITE_EMAIL_SERVICE_KEY"
-            echo "GITHUBTOKEM=$GITHUB_TOKEN"
+            echo "GITHUBTOKEN=$GITHUB_TOKEN"
 
       - name: Build project
         run: npm run build
