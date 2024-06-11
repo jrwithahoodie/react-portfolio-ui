@@ -16,11 +16,9 @@ jobs:
 
       - name: Setup Node
         uses: actions/setup-node@v3
-        with:
-          node-version: '14' # especifica la versión de Node.js que necesitas
 
       - name: Install dependencies
-        run: npm install
+        uses: bahmutov/npm-install@v1
 
       - name: Print environment variables
         run: |
