@@ -16,9 +16,21 @@ jobs:
 
       - name: Setup Node
         uses: actions/setup-node@v3
+        with:
+          node-version: '14' # especifica la versión de Node.js que necesitas
 
       - name: Install dependencies
-        uses: bahmutov/npm-install@v1
+        run: npm install
+
+      - name: Print environment variables
+        run: |
+          echo "VITE_EMAIL_SERVICE=$VITE_EMAIL_SERVICE"
+          echo "VITE_EMAIL_TEMPLATE=$VITE_EMAIL_TEMPLATE"
+          echo "VITE_EMAIL_SERVICE_KEY=$VITE_EMAIL_SERVICE_KEY"
+        env:
+          VITE_EMAIL_SERVICE: ${{ secrets.VITE_EMAIL_SERVICE }}
+          VITE_EMAIL_TEMPLATE: ${{ secrets.VITE_EMAIL_TEMPLATE }}
+          VITE_EMAIL_SERVICE_KEY: ${{ secrets.VITE_EMAIL_SERVICE_KEY }}
 
       - name: Build project
         env:
