@@ -1,5 +1,6 @@
-import React, { useRef } from 'react'
-import emailjs from "@emailjs/browser"
+import React, { useRef } from 'react';
+import emailjs from "@emailjs/browser";
+import { toast } from 'react-toastify';
 
 import "./ContactContentStyles.css"
 
@@ -14,9 +15,36 @@ export const ContactContent = () => {
         const templateId = import.meta.env.VITE_EMAIL_TEMPLATE;
         const apiKey = import.meta.env.VITE_EMAIL_SERVICE_KEY;
 
-        emailjs.sendForm(serviceId, templateId, refForm.current, apiKey)
-            .then(result => console.log(result.text))
-            .catch(error => console.log(error));
+        const sendEmailPromise = emailjs.sendForm(serviceId, templateId, refForm.current, apiKey);
+
+        toast.promise(
+            sendEmailPromise,
+            {
+                pending: {
+                    render() {
+                        return "Sending your message...";
+                    },
+                    className: 'toast-container-dark',
+                    progressClassName: 'toast-progress-dark'
+                },
+                success: {
+                    render() {
+                        return "Message sent successfully!";
+                    },
+                    className: 'toast-container-dark',
+                    progressClassName: 'toast-progress-dark',
+                    autoClose: 5000
+                },
+                error: {
+                    render({ data }) {
+                        return "Failed to send message";
+                    },
+                    className: 'toast-container-dark',
+                    progressClassName: 'toast-progress-dark',
+                    autoClose: 5000
+                }
+            }
+        );
     }
 
     return (
