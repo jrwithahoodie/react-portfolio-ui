@@ -21,6 +21,10 @@ jobs:
         uses: bahmutov/npm-install@v1
 
       - name: Build project
+        env:
+          VITE_EMAIL_SERVICE: ${{ secrets.VITE_EMAIL_SERVICE }}
+          VITE_EMAIL_TEMPLATE: ${{ secrets.VITE_EMAIL_TEMPLATE }}
+          VITE_EMAIL_SERVICE_KEY: ${{ secrets.VITE_EMAIL_SERVICE_KEY }}
         run: npm run build
 
       - name: Upload production-ready build files

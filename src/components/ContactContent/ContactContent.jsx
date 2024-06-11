@@ -10,9 +10,9 @@ export const ContactContent = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        const serviceId = process.env.EMAILJS_SERVICE_ID;
-        const templateId = process.env.EMAILJS_TEMPLATE_ID;
-        const apiKey = process.env.EMAILJS_APIKEY;
+        const serviceId = import.meta.env.VITE_EMAIL_SERVICE;
+        const templateId = import.meta.env.VITE_EMAIL_TEMPLATE;
+        const apiKey = import.meta.env.VITE_EMAIL_SERVICE_KEY;
 
         emailjs.sendForm(serviceId, templateId, refForm.current, apiKey)
             .then(result => console.log(result.text))
