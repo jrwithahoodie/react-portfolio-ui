@@ -22,9 +22,9 @@ jobs:
 
       - name: Print environment variables
         env:
-          VITE_EMAIL_SERVICE: ${{ secrets.VITE_EMAIL_SERVICE }}
-          VITE_EMAIL_TEMPLATE: ${{ secrets.VITE_EMAIL_TEMPLATE }}
-          VITE_EMAIL_SERVICE_KEY: ${{ secrets.VITE_EMAIL_SERVICE_KEY }}
+          VITE_EMAIL_SERVICE: ${{ env.VITE_EMAIL_SERVICE }}
+          VITE_EMAIL_TEMPLATE: ${{ env.VITE_EMAIL_TEMPLATE }}
+          VITE_EMAIL_SERVICE_KEY: ${{ env.VITE_EMAIL_SERVICE_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
             echo "VITE_EMAIL_SERVICE=$VITE_EMAIL_SERVICE"
@@ -35,9 +35,9 @@ jobs:
       - name: Build project
         run: npm run build
         env:
-          VITE_EMAIL_SERVICE: ${{ secrets.VITE_EMAIL_SERVICE }}
-          VITE_EMAIL_TEMPLATE: ${{ secrets.VITE_EMAIL_TEMPLATE }}
-          VITE_EMAIL_SERVICE_KEY: ${{ secrets.VITE_EMAIL_SERVICE_KEY }}
+          VITE_EMAIL_SERVICE: ${{ env.VITE_EMAIL_SERVICE }}
+          VITE_EMAIL_TEMPLATE: ${{ env.VITE_EMAIL_TEMPLATE }}
+          VITE_EMAIL_SERVICE_KEY: ${{ env.VITE_EMAIL_SERVICE_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Upload production-ready build files
